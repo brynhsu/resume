@@ -1,0 +1,265 @@
+
+/* header section */
+.body {
+  background-color: #aba5b3;
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+.headlines {
+  background-color: ##aba5b3;
+  width: 100%;
+  text-align: center;
+
+}
+
+
+.header {
+  background-color: : #ffffff;
+  width: 100%;
+  align-items: center;
+
+}
+
+
+
+/* navbar */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.navbartext {
+  color: #ffffff;
+  transition: color 2s;
+
+}
+
+.navbartext:hover {
+  color: #78d1f3;
+}
+
+.img {
+    display: flex;
+    align-items: flex-start;
+    padding:5px;
+
+}
+
+
+
+.menu-link {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+
+
+
+/* skills */
+
+.skillz {
+  display: flex;
+  flex-direction: row;
+  color:#ffffff;
+
+}
+
+.skills-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 10px;
+
+}
+
+.skills-left {
+  align-items: flex-start;
+  min-width: 150px;
+}
+
+.skills-right {
+  align-items: flex-end;
+
+}
+
+.skills-middle {
+  width: 60%;
+}
+
+meter {
+  width: 100%;
+  flex-grow: 1;
+
+}
+
+meter::-webkit-meter-bar {
+  border-radius: 0px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #79d3dc;
+}
+
+/* text */
+p {
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0.75px;
+  transition: color 1.2s;
+
+}
+p:hover {
+  transition: #78d1f3;
+}
+
+.boldtext{
+ text-decoration:thin;
+}
+
+.boldtext::first-letter {
+  text-decoration: underline;
+}
+
+p:hover {
+  color:#b0d2d5;
+}
+
+
+nav a {
+  text-transform: uppercase;
+}
+
+
+h3 {
+  color: #ffffff;
+
+}
+
+h2 {
+  color:pink;
+}
+
+.cv-text {
+  justify-content: center;
+}
+
+
+/* placement-left,right */
+.profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #aba5b3;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+
+.skillsleft {
+  display: flex;
+}
+/* experience section */
+.xp {
+  display: flex;
+  align-items: flex-start;
+}
+
+.xpchild {
+  flex: 3;
+}
+
+.xp-title {
+  font-size: 24px;
+  color: pink;
+}
+
+.xp-section strong {
+  color: #79d3dc;
+}
+
+.xp-company {
+  font-size: 24px;
+  color:#ffffff;
+}
+
+.left {
+  width: 25%;
+  text-align: right;
+
+}
+
+.right {
+  width: 75%;
+  padding-left: 20px;
+  text-align: left;
+  color:#ffffff;
+}
+
+/* footer */
+.footer {
+  display: flex;
+}
+
+.footerleft{
+  width: 25%;
+
+}
+
+.footerright{
+  width: 75%;
+}
+
+footer a {
+  color: white;
+  font-weight: 100;
+  display: flex;
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+    main {
+      display:flex;
+      flex-direction: column;
+    }
+    div p {
+        font-size: 0.9em;
+    }
+
+    meter {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* other styling */
+
+
+@media screen and (max-width: 480px) {
+    main {
+      display:flex;
+      flex-direction: column;
+      font-size: 0.5em;
+    }
+
+    h2 {
+      font-size:16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    meter {
+      display: flex;
+      flex-direction: column;
+    }
+
+@media print {
+    #header-image {
+      display: none;
+    }
+
+    /* other styling */
